@@ -1,0 +1,51 @@
+{
+  "format": 2,
+  "version": "0.1.0",
+  "author": "mo",
+  "license": "GPL-3.0-or-later",
+  "api": "1.9",
+  "games": {
+    "rac1": [
+      "pal",
+      "ntsc"
+    ]
+  },
+  "id": "accessibility-pack",
+  "name": "Accessibility Pack",
+  "description": "Adds hold-to-mash assistance for Cross, Circle and Square plus an optional automatic in-level cutscene skip.",
+  "settings": [
+    {
+      "key": "turbo_cross",
+      "name": "Hold-to-mash Cross",
+      "type": "bool",
+      "default": true
+    },
+    {
+      "key": "turbo_circle",
+      "name": "Hold-to-mash Circle",
+      "type": "bool",
+      "default": false
+    },
+    {
+      "key": "turbo_square",
+      "name": "Hold-to-mash Square",
+      "type": "bool",
+      "default": false
+    },
+    {
+      "key": "turbo_interval",
+      "name": "Mash interval (ticks)",
+      "type": "int",
+      "default": 6,
+      "min": 2,
+      "max": 20,
+      "step": 1
+    },
+    {
+      "key": "skip_cutscenes",
+      "name": "Automatically skip in-level cutscenes",
+      "type": "bool",
+      "default": false
+    }
+  ]
+}
