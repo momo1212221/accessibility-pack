@@ -18,7 +18,7 @@ void assist(std::uint8_t* report,std::uint8_t bit,bool enabled,std::uint32_t tic
 }
 
 void load(openrac::Mod& mod){
-    if(mod.game()!="rac1") throw openrac::Error("Accessibility Pack is for RAC1");
+    if(mod.game()!="rac1" && mod.game()!="rac2") throw openrac::Error("Accessibility Pack is for RAC1 and RAC2");
     g=&mod;
     cross_on=mod.setting<bool>("turbo_cross");
     circle_on=mod.setting<bool>("turbo_circle");
@@ -34,4 +34,4 @@ void load(openrac::Mod& mod){
     });
     mod.info("hold-to-mash accessibility enabled; cutscenes are untouched");
 }
-OPENRAC_MOD_CPP("accessibility-pack","0.2.0",load)
+OPENRAC_MOD_CPP("accessibility-pack","0.2.1",load)
